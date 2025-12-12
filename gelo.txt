@@ -1,16 +1,3 @@
-<button class="btn" id="loginBtn">LOGIN</button>
-<button class="btn" id="daftarBtn">DAFTAR</button>
-
-<script>
-  document.getElementById("loginBtn").onclick = function () {
-    window.location.href = "https://jadikaya138resmi.pages.dev/register";
-  };
-
-  document.getElementById("daftarBtn").onclick = function () {
-    window.location.href = "https://jadikaya138resmi.pages.dev/register";
-  };
-</script>
-<link rel="amphtml" href="https://wwwadventureaurain.pages.dev/amp/" />
 <div style="display: none;">
 <a href="https://hostigo.in/about/">DOLLY4D</a>
 <a href="https://hostigo.in/about/">NOBITABET</a>
