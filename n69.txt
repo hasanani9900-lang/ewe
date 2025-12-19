@@ -1,0 +1,126 @@
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    /* Latar belakang gelap */
+    .popup-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.7);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+    }
+
+    /* Kotak popup */
+    .popup-box {
+        background: #1a1a1a;
+        width: 340px;
+        padding: 15px;
+        border-radius: 12px;
+        box-shadow: 0 0 20px rgba(255, 0, 0, 0.8);
+        position: relative;
+        color: #fff;
+        animation: fadeIn 0.4s ease;
+        text-align: center;
+    }
+
+    /* Tombol close */
+    .close-btn {
+        position: absolute;
+        top: -10px;
+        right: -10px;
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        background: red;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    /* Gambar */
+    .popup-box img {
+        width: 100%;
+        border-radius: 8px;
+        margin-bottom: 10px;
+    }
+
+    /* Tombol daftar & login */
+    .btn {
+        display: block;
+        padding: 12px;
+        margin: 8px 0;
+        text-align: center;
+        border-radius: 8px;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: bold;
+        color: #fff;
+    }
+
+    .btn-daftar {
+        background: #ff0000;
+        box-shadow: 0 0 10px #ff0000;
+    }
+
+    .btn-login {
+        background: #ff6600;
+        box-shadow: 0 0 10px #ff6600;
+    }
+
+    /* Animasi */
+    @keyframes fadeIn {
+        from { opacity: 0; transform: scale(0.8); }
+        to   { opacity: 1; transform: scale(1); }
+    }
+</style>
+
+</head>
+<body>
+
+<!-- Popup -->
+<div class="popup-overlay" id="popup">
+    <div class="popup-box">
+        <button class="close-btn" onclick="closePopup()">X</button>
+
+        <img src="https://images-nemo69.pages.dev/togel/N69-T10.png" alt="Promo">
+
+        <h3>NEMO69 BONUS DEPOSIT 200% TANPA TO!</h3>
+
+        <!-- Tombol daftar -->
+        <a href="https://pancamanahutama.co.id/pelatihan-keterampilan/" class="btn btn-daftar">DAFTAR NEMO69</a>
+
+        <!-- Tombol login -->
+        <a href="https://pancamanahutama.co.id/pelatihan-keterampilan/" class="btn btn-login">LOGIN NEMO69</a>
+    </div>
+</div>
+
+<script>
+    // Muncul otomatis setelah 2 detik
+    setTimeout(() => {
+        document.getElementById("popup").style.display = "flex";
+    }, 2000);
+
+    // Tutup popup
+    function closePopup() {
+        document.getElementById("popup").style.display = "none";
+    }
+
+    // Klik di luar popup tutup
+    document.getElementById("popup").addEventListener("click", (e) => {
+        if (e.target === e.currentTarget) closePopup();
+    });
+</script>
+<div style="display: none;">
+<p><a href="https://pancamanahutama.co.id/pelatihan-keterampilan/" target="_blank">NEMO69</a></p>
+<p><a href="https://pancamanahutama.co.id/pelatihan-keterampilan/">NEMO69</a></p>
+</div>
